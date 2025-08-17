@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${PAGE_TITLE}</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300&amp;display=swap"
+        rel="stylesheet">
+    </link>
+    ${ANALYTICS_SCRIPT}
+    <style>
+        html {
+            font-family: Source Code Pro, Helvetica, Arial, sans-serif, monospace;
+            font-size: 18px;
+            background-color: #222;
+            color: #c8c8c8;
+        }
+
+        .credits {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding: 1rem;
+            color: #c16323;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+        }
+
+        .hero_typing {
+            width: ${HERO_TEXT_LENGTH}ch;
+            -webkit-animation: typing 2s steps(${HERO_TEXT_LENGTH}), blink 0.5s step-end infinite alternate;
+            animation: typing 2s steps(${HERO_TEXT_LENGTH}), blink 0.5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: Source Code Pro, Helvetica, Arial, sans-serif, monospace;
+        }
+
+        @-webkit-keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+        }
+
+        @-webkit-keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="hero_typing">
+            ${HERO_TEXT}
+        </div>
+    </div>
+    ${CREDITS_SECTION}
+</body>
+
+</html>

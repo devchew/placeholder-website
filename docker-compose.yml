@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  placeholder-website:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - PAGE_TITLE=soon
+      - HERO_TEXT=soon...
+      # Optional variables - uncomment and set as needed:
+      # - ANALYTICS_SCRIPT=<script defer src="https://umami.polmaciex.pl/script.js" data-website-id="your-website-id"></script>
+      # - CREDITS_LINK=https://your-website.com
+      # - CREDITS_LINK_TITLE=your-website.com
+    # You can override these by creating a .env file or using environment variables
