@@ -43,7 +43,7 @@
             white-space: nowrap;
             overflow: hidden;
             border-right: 3px solid;
-            font-family: Source Code Pro, Helvetica, Arial, sans-serif, monospace;
+            font-family: monospace;
         }
 
         @-webkit-keyframes typing {
